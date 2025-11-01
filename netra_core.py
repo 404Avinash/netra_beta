@@ -364,16 +364,24 @@ class NetraAI:
         Complete threat analysis for a location
         
         Args:
-            location_key: Key from NE_LOCATIONS
+            location_key: Key from NE_LOCATIONS or location name string
             sensors: Sensor readings
             
         Returns:
             Dictionary with complete analysis results
         """
-        if location_key not in NE_LOCATIONS:
-            raise ValueError(f"Unknown location: {location_key}")
-        
-        location = NE_LOCATIONS[location_key]
+        # Check if it's a predefined location key
+        if location_key in NE_LOCATIONS:
+            location = NE_LOCATIONS[location_key]
+        else:
+            # Create a temporary location entry for CSV-based locations
+            location = {
+                'name': location_key,
+                'state': 'North-East India',
+                'type': 'Strategic Location',
+                'lat': 0.0,  # Will be filled if available
+                'lon': 0.0
+            }
         
         # Calculate metrics
         probability = self.calculate_threat_probability(sensors)
