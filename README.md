@@ -3,9 +3,47 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Development](https://img.shields.io/badge/status-development-orange.svg)]()
+[![Status: Production Ready](https://img.shields.io/badge/status-production%20ready-brightgreen.svg)]()
+[![Streamlit App](https://img.shields.io/badge/streamlit-ready-FF4B4B.svg)](https://streamlit.io)
 
-A sophisticated IED detection and neutralization system combining rover-drone coordination, multi-sensor fusion, and intelligent threat mapping for protecting both military and civilian populations.
+A sophisticated IED detection and threat analysis system combining rover-drone coordination, multi-sensor fusion, and intelligent threat mapping for protecting both military and civilian populations in North-East India.
+
+---
+
+## 🚀 Quick Start (Hackathon Ready!)
+
+```powershell
+# 1. Install dependencies
+pip install -r requirements_streamlit.txt
+
+# 2. Run the web application
+streamlit run netra_app.py
+
+# Or use the quick start script
+.\start_netra.ps1
+```
+
+**Access the app at:** http://localhost:8501
+
+---
+
+## 🎥 Live Demo
+
+### Watch the System in Action
+- **Dashboard**: Real-time metrics and system overview
+- **Threat Analysis**: Interactive sensor controls with live threat calculation
+- **Regional Map**: 10 strategic locations across North-East India
+- **Batch Analysis**: Simultaneous multi-location threat assessment
+- **Analytics**: Historical data and trend analysis
+
+### Quick Demo Scenario
+1. Navigate to "🔍 Threat Analysis"
+2. Select "Guwahati Airport Road, Assam"
+3. Set sensors: Fume=85%, Metal=80%, GPR=75%
+4. Click "ANALYZE THREAT NOW"
+5. View results: threat level, interactive map, recommendations
+
+---
 
 ---
 

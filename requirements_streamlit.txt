@@ -1,0 +1,28 @@
+# N.E.T.R.A. System - Streamlit Web Application Requirements
+# Version 2.0 - Hackathon Ready
+# Requires: Python 3.8 or higher
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Web Framework
+streamlit>=1.28.0
+
+# Visualization
+plotly>=5.17.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Mapping
+folium>=0.14.0
+streamlit-folium>=0.15.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# Date/Time
+python-dateutil>=2.8.2
+
+# Additional utilities
+scipy>=1.11.0
