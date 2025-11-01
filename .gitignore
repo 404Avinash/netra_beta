@@ -46,7 +46,23 @@ ml_training/logs/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
+
+# Local configuration (DO NOT SHARE - Each user has their own)
+netra_config.json
+# Keep sensor_data.csv for demo (commented out)
+# sensor_data.csv
+*.db
+*.sqlite
+*.sqlite3
+secrets.json
+credentials.json
+
+# ZIP packages (too large for GitHub)
+*.zip
+
+# Local venv
+.venv/
+venv/
 
 # Database
 *.db

@@ -1,0 +1,51 @@
+Location_ID,Location,State,Type,Latitude,Longitude,Population,Risk_Zone
+LOC_001,Imphal City Center,Manipur,Urban,24.817,93.9368,High,Medium
+LOC_002,Imphal Airport Road,Manipur,Transport,24.76,93.8967,Medium,High
+LOC_003,Bishnupur District,Manipur,Rural,24.5965,93.7699,Low,Low
+LOC_004,Churachandpur Border,Manipur,Border,24.3333,93.6833,Low,High
+LOC_005,Thoubal Checkpoint,Manipur,Checkpoint,24.6333,94.0,Medium,Medium
+LOC_006,Ukhrul Hills,Manipur,Hilly,25.06,94.36,Low,Medium
+LOC_007,Moreh Border Post,Manipur,Border,24.4,94.0167,Medium,Critical
+LOC_008,Jiribam Railway Station,Manipur,Transport,24.8,93.1,Low,High
+LOC_009,Kakching District,Manipur,Rural,24.4986,93.9811,Medium,Low
+LOC_010,Senapati Checkpoint,Manipur,Checkpoint,25.2667,94.0333,Low,Medium
+LOC_011,Kohima City,Nagaland,Urban,25.6747,94.1078,High,Low
+LOC_012,Dimapur Junction,Nagaland,Transport,25.9097,93.7267,High,Medium
+LOC_013,Mon Border Area,Nagaland,Border,26.7167,95.0,Low,High
+LOC_014,Tuensang District,Nagaland,Rural,26.2667,94.8167,Low,Medium
+LOC_015,Mokokchung Town,Nagaland,Urban,26.3222,94.5167,Medium,Low
+LOC_016,Wokha Checkpoint,Nagaland,Checkpoint,26.1,94.2667,Low,Medium
+LOC_017,Zunheboto Hills,Nagaland,Hilly,25.9667,94.5333,Low,Low
+LOC_018,Phek District,Nagaland,Rural,25.6667,94.5,Low,Medium
+LOC_019,Peren Border,Nagaland,Border,25.5,93.7333,Low,High
+LOC_020,Longleng Checkpoint,Nagaland,Checkpoint,26.45,94.9333,Low,Medium
+LOC_021,Shillong City Center,Meghalaya,Urban,25.5788,91.8933,High,Low
+LOC_022,Tura Town,Meghalaya,Urban,25.5138,90.2022,Medium,Medium
+LOC_023,Dawki Border,Meghalaya,Border,25.1667,92.0,Low,High
+LOC_024,Jowai Checkpoint,Meghalaya,Checkpoint,25.45,92.2,Low,Medium
+LOC_025,Nongpoh Junction,Meghalaya,Transport,25.9,91.8833,Medium,Low
+LOC_026,Cherrapunji Hills,Meghalaya,Hilly,25.3,91.7,Low,Low
+LOC_027,Baghmara District,Meghalaya,Rural,25.1833,90.6333,Low,Medium
+LOC_028,Williamnagar Border,Meghalaya,Border,25.4833,90.1333,Low,High
+LOC_029,Guwahati City,Assam,Urban,26.1445,91.7362,High,Low
+LOC_030,Tezpur Airbase,Assam,Military,26.6333,92.8,Medium,Critical
+LOC_031,Silchar Airport,Assam,Transport,24.9128,92.9786,Medium,Medium
+LOC_032,Bongaigaon Refinery,Assam,Industrial,26.4833,90.55,Medium,High
+LOC_033,Dibrugarh Oil Town,Assam,Industrial,27.4833,94.9,Medium,Medium
+LOC_034,Jorhat District,Assam,Rural,26.75,94.2167,Medium,Low
+LOC_035,Kokrajhar Border,Assam,Border,26.4014,90.2714,Low,High
+LOC_036,Haflong Hills,Assam,Hilly,25.1667,93.0167,Low,Medium
+LOC_037,Agartala City,Tripura,Urban,23.8315,91.2868,High,Low
+LOC_038,Dharmanagar Border,Tripura,Border,24.3667,92.1667,Medium,High
+LOC_039,Udaipur District,Tripura,Rural,23.5333,91.4833,Low,Low
+LOC_040,Kailashahar Checkpoint,Tripura,Checkpoint,24.3333,92.0,Low,Medium
+LOC_041,Sabroom Border Post,Tripura,Border,23.0,91.7167,Low,Critical
+LOC_042,Khowai Junction,Tripura,Transport,24.0667,91.6,Low,Low
+LOC_043,Belonia Checkpoint,Tripura,Checkpoint,23.25,91.4667,Low,Medium
+LOC_044,Aizawl City,Mizoram,Urban,23.7307,92.7173,High,Low
+LOC_045,Champhai Border,Mizoram,Border,23.4667,93.3333,Low,Critical
+LOC_046,Lunglei Town,Mizoram,Urban,22.8833,92.7333,Medium,Low
+LOC_047,Saiha District,Mizoram,Rural,22.4833,92.9833,Low,Medium
+LOC_048,Itanagar Capital,Arunachal Pradesh,Urban,27.1,93.6167,Medium,Low
+LOC_049,Tawang Border,Arunachal Pradesh,Border,27.5833,91.8667,Low,Critical
+LOC_050,Ziro Valley,Arunachal Pradesh,Hilly,27.5667,93.8333,Low,Low
