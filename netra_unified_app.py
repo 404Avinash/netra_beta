@@ -51,6 +51,22 @@ except Exception as e:
     ML_MODE = False
     print(f"⚠️ ML Model not found ({e}) - Using rule-based fallback")
 
+# ==================== FORECASTING MODULE ====================
+FORECAST_AVAILABLE = False
+try:
+    import sys
+    # Add development folder to path
+    current_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()
+    dev_path = os.path.join(current_dir, 'development')
+    if dev_path not in sys.path:
+        sys.path.insert(0, dev_path)
+    from threat_forecast import run_all_forecasts
+    FORECAST_AVAILABLE = True
+    print("✅ Forecasting module loaded successfully!")
+except Exception as e:
+    FORECAST_AVAILABLE = False
+    print(f"⚠️ Forecasting module not found: {e}")
+
 
 # ==================== PAGE CONFIGURATION ====================
 st.set_page_config(
@@ -391,6 +407,53 @@ def show_dashboard():
         st.dataframe(display_df, use_container_width=True)
     else:
         st.info("✅ No critical threats detected")
+    
+    # ==================== FORECAST CHART ====================
+    st.markdown("### 🔮 10-Day Threat Forecast (Future Predictions)")
+    if FORECAST_AVAILABLE:
+        forecasts = run_all_forecasts(days_ahead=10)
+        forecast_df = forecasts['threat_counts']
+        fig_forecast = go.Figure()
+        fig_forecast.add_trace(go.Scatter(
+            x=forecast_df['ds'], y=forecast_df['yhat'],
+            mode='lines+markers', name='Predicted Threats',
+            line=dict(color='#22d3ee', width=3)
+        ))
+        fig_forecast.add_trace(go.Scatter(
+            x=forecast_df['ds'], y=forecast_df['yhat_upper'],
+            mode='lines', name='Upper Bound',
+            line=dict(color='#a7f3d0', dash='dot')
+        ))
+        fig_forecast.add_trace(go.Scatter(
+            x=forecast_df['ds'], y=forecast_df['yhat_lower'],
+            mode='lines', name='Lower Bound',
+            line=dict(color='#fca5a5', dash='dot')
+        ))
+        fig_forecast.update_layout(
+            title='Predicted Daily Threats (Next 10 Days)',
+            xaxis_title='Date', yaxis_title='Predicted Threats',
+            paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', font={'color': 'white'}
+        )
+        st.plotly_chart(fig_forecast, use_container_width=True)
+        
+        # ==================== FORECAST TABLE ====================
+        st.markdown("#### 📅 Daily Threat Predictions Table")
+        table_df = forecast_df.copy()
+        table_df['ds'] = table_df['ds'].dt.strftime('%Y-%m-%d')
+        table_df = table_df.rename(columns={'ds': 'Date', 'yhat': 'Predicted Threats', 'yhat_lower': 'Lower Bound', 'yhat_upper': 'Upper Bound'})
+        st.dataframe(table_df, use_container_width=True)
+        
+        # ==================== LOCATION-SPECIFIC FORECAST ====================
+        st.markdown("#### 🗺️ Top Locations - Predicted Threats")
+        top_locations = forecasts['top_locations']
+        for loc, loc_df in top_locations.items():
+            st.markdown(f"**{loc}**")
+            loc_table = loc_df.copy()
+            loc_table['ds'] = loc_table['ds'].dt.strftime('%Y-%m-%d')
+            loc_table = loc_table.rename(columns={'ds': 'Date', 'yhat': 'Predicted Threats', 'yhat_lower': 'Lower Bound', 'yhat_upper': 'Upper Bound'})
+            st.dataframe(loc_table, use_container_width=True)
+    else:
+        st.info("⚠️ Forecasting module not available. Future predictions disabled.")
 
 
 # ==================== PAGE: LIVE ANALYSIS ====================
@@ -1082,6 +1145,9 @@ def show_settings():
     if st.button("🗑️ Clear Cache"):
         st.cache_data.clear()
         st.success("✅ Cache cleared!")
+
+
+# Forecasting module import moved to top of file
 
 
 # ==================== MAIN APP ====================
