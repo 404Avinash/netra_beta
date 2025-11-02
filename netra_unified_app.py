@@ -32,6 +32,25 @@ except ImportError:
     CORE_AVAILABLE = False
     st.warning("⚠️ netra_core.py not found - running in historical data mode only")
 
+# ==================== ML MODEL LOADING ====================
+# Load XGBoost model with graceful fallback
+ML_MODEL = None
+ML_ENCODERS = None
+ML_FEATURES = None
+ML_MODE = False
+
+try:
+    import joblib
+    ML_MODEL = joblib.load('models/netra_xgboost_model.pkl')
+    ML_ENCODERS = joblib.load('models/netra_encoders.pkl')
+    with open('models/netra_features.json', 'r') as f:
+        ML_FEATURES = json.load(f)
+    ML_MODE = True
+    print("✅ ML Model loaded successfully - Running in ML-powered mode")
+except Exception as e:
+    ML_MODE = False
+    print(f"⚠️ ML Model not found ({e}) - Using rule-based fallback")
+
 
 # ==================== PAGE CONFIGURATION ====================
 st.set_page_config(
@@ -225,6 +244,13 @@ def create_sidebar():
             st.success("✅ Live Mode: Active")
         else:
             st.info("📊 Historical Mode Only")
+        
+        # ML Model status
+        if ML_MODE:
+            st.success("🤖 ML Model: Loaded")
+            st.caption("XGBoost - 83.1% accuracy (10K dataset)")
+        else:
+            st.warning("⚙️ Rule-Based Mode")
         
         # Quick stats
         data = st.session_state.historical_data
@@ -448,12 +474,16 @@ def show_live_analysis():
     
     with col1:
         if st.button("🔍 ANALYZE THREAT NOW", type="primary", use_container_width=True):
-            analyze_threat(sensors, selected_location if 'locations' in data else location_key)
+            analysis = analyze_threat(sensors, selected_location if 'locations' in data else location_key)
+            st.session_state.current_analysis = analysis
+            st.success(f"✅ Analysis complete! Scan ID: {analysis['scan_id']}")
     
     with col2:
         if st.button("🎲 RANDOM SCENARIO", use_container_width=True):
             random_sensors = {k: np.random.randint(10, 95) for k in sensors.keys()}
-            analyze_threat(random_sensors, selected_location if 'locations' in data else location_key)
+            analysis = analyze_threat(random_sensors, selected_location if 'locations' in data else location_key)
+            st.session_state.current_analysis = analysis
+            st.success(f"✅ Analysis complete! Scan ID: {analysis['scan_id']}")
     
     with col3:
         if st.button("🔄 RESET", use_container_width=True):
@@ -465,50 +495,139 @@ def show_live_analysis():
 
 
 def analyze_threat(sensors, location):
-    """Perform threat analysis"""
+    """Perform threat analysis using ML model or fallback"""
     with st.spinner("🔄 Analyzing threat data..."):
         time.sleep(1)
         
         if CORE_AVAILABLE:
             analysis = st.session_state.netra_ai.analyze_location(location, sensors)
+        elif ML_MODE:
+            # ML-POWERED ANALYSIS 🤖
+            try:
+                # Get explosive data from historical records for this location
+                df = pd.read_csv('netra_threat_log.csv')
+                location_data = df[df['Location'] == location]
+                
+                if len(location_data) > 0:
+                    # Use most common explosive type for this location
+                    latest = location_data.iloc[-1]
+                    danger_level = latest['Danger_Level']
+                    explosive_class = latest['Explosive_Class']
+                else:
+                    # Default values if location not found
+                    danger_level = 'Medium'
+                    explosive_class = 'Low Explosive'
+                
+                # Prepare features for ML model
+                features = {
+                    'Fume_Detection': sensors['fume'],
+                    'Metal_Detection': sensors['metal'],
+                    'GPR_Reading': sensors['gpr'],
+                    'Ground_CV': sensors['ground_cv'],
+                    'Drone_CV': sensors['drone_cv'],
+                    'Disturbance': sensors['disturbance'],
+                    'Thermal': sensors['thermal']
+                }
+                
+                # Add derived features
+                features['Fume_Metal_Product'] = sensors['fume'] * sensors['metal'] / 100
+                features['CV_Average'] = (sensors['ground_cv'] + sensors['drone_cv']) / 2
+                features['Surface_Anomaly'] = (sensors['disturbance'] + sensors['thermal']) / 2
+                features['High_Fume_Metal'] = int(sensors['fume'] > 70 and sensors['metal'] > 70)
+                features['High_CV_Detection'] = int(sensors['ground_cv'] > 70 or sensors['drone_cv'] > 70)
+                features['Multiple_Indicators'] = sum([
+                    int(sensors['fume'] > 60),
+                    int(sensors['metal'] > 60),
+                    int(sensors['gpr'] > 60),
+                    int(sensors['disturbance'] > 60)
+                ])
+                
+                # Encode explosive characteristics
+                try:
+                    features['Danger_Level_Encoded'] = ML_ENCODERS['danger_encoder'].transform([danger_level])[0]
+                    features['Explosive_Class_Encoded'] = ML_ENCODERS['class_encoder'].transform([explosive_class])[0]
+                except:
+                    # Fallback to default encoding
+                    features['Danger_Level_Encoded'] = 0
+                    features['Explosive_Class_Encoded'] = 0
+                
+                # Create feature array in correct order
+                X_new = np.array([[features[f] for f in ML_FEATURES['all_features']]])
+                
+                # ML PREDICTION
+                prediction = ML_MODEL.predict(X_new)[0]
+                probabilities = ML_MODEL.predict_proba(X_new)[0]
+                
+                threat_level = ML_ENCODERS['target_encoder'].inverse_transform([prediction])[0]
+                probability = float(probabilities[prediction] * 100)
+                
+                analysis = {
+                    'scan_id': f"SCAN_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+                    'location': location,
+                    'probability': probability,
+                    'threat_level': threat_level,
+                    'confidence': probability,  # ML confidence is the probability
+                    'sensors': sensors,
+                    'ml_powered': True  # Flag to show ML badge
+                }
+                
+            except Exception as e:
+                # If ML fails, fallback to rule-based
+                st.warning(f"⚠️ ML prediction failed ({str(e)}), using rule-based fallback")
+                analysis = fallback_rule_based_analysis(sensors, location)
         else:
-            # Simulation mode
-            weights = {'fume': 0.25, 'metal': 0.20, 'gpr': 0.20, 'ground_cv': 0.10,
-                      'drone_cv': 0.10, 'disturbance': 0.10, 'thermal': 0.05}
-            probability = sum(sensors[k] * weights[k] for k in sensors.keys())
-            
-            # Correlation boost
-            if sensors['fume'] > 70 and sensors['metal'] > 70:
-                probability += 10
-            
-            probability = min(100, probability)
-            
-            if probability >= 75:
-                threat_level = "CRITICAL"
-            elif probability >= 55:
-                threat_level = "HIGH"
-            elif probability >= 35:
-                threat_level = "MODERATE"
-            else:
-                threat_level = "LOW"
-            
-            analysis = {
-                'scan_id': f"SCAN_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
-                'location': location,
-                'probability': probability,
-                'threat_level': threat_level,
-                'confidence': np.random.uniform(85, 95),
-                'sensors': sensors
-            }
+            # RULE-BASED FALLBACK
+            analysis = fallback_rule_based_analysis(sensors, location)
         
-        st.session_state.current_analysis = analysis
-        st.success(f"✅ Analysis complete! Scan ID: {analysis['scan_id']}")
+        return analysis
+
+
+def fallback_rule_based_analysis(sensors, location):
+    """Rule-based threat analysis (fallback when ML not available)"""
+    # Simple weighted formula
+    weights = {'fume': 0.25, 'metal': 0.20, 'gpr': 0.20, 'ground_cv': 0.10,
+              'drone_cv': 0.10, 'disturbance': 0.10, 'thermal': 0.05}
+    probability = sum(sensors[k] * weights[k] for k in sensors.keys())
+    
+    # Correlation boost
+    if sensors['fume'] > 70 and sensors['metal'] > 70:
+        probability += 10
+    
+    probability = min(100, probability)
+    
+    if probability >= 75:
+        threat_level = "CRITICAL"
+    elif probability >= 55:
+        threat_level = "HIGH"
+    elif probability >= 35:
+        threat_level = "MODERATE"
+    else:
+        threat_level = "LOW"
+    
+    analysis = {
+        'scan_id': f"SCAN_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+        'location': location,
+        'probability': probability,
+        'threat_level': threat_level,
+        'confidence': np.random.uniform(85, 95),
+        'sensors': sensors,
+        'ml_powered': False  # Rule-based mode
+    }
+    
+    return analysis
 
 
 def display_live_results(analysis):
     """Display live analysis results"""
     st.markdown("---")
-    st.markdown("## 📊 Analysis Results")
+    
+    # Show ML badge if ML-powered
+    if analysis.get('ml_powered', False):
+        st.markdown("## 📊 Analysis Results 🤖 *ML-Powered*")
+        st.caption("Analyzed using XGBoost ML Model - 83.1% accuracy (trained on 10,000 records)")
+    else:
+        st.markdown("## 📊 Analysis Results ⚙️ *Rule-Based*")
+        st.caption("Analyzed using traditional weighted sensor fusion")
     
     probability = analysis['probability']
     threat_level = analysis['threat_level']

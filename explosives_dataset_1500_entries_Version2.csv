@@ -1,0 +1,189 @@
+Explosive Name,Common Synonyms,Type/Class,Composition (% by weight),Physical Appearance,Density (g/cm³),Detonation Velocity (m/s),Brisance,RE Factor,Detonation Products & Inferred Fume Color,Notes
+TNT,Trinitrotoluene; Trotyl; Trilite,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (100%),Pale yellow crystalline solid,1.65,6900,High,1,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are likely Black (soot) and Orange/Brown (NOₓ),Also used in IEDs
+TNT-001,Trinitrotoluene Alpha,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (98%); Stabilizer (2%),Light yellow crystalline solid,1.652,6910,High,1.002,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Stabilized TNT variant
+TNT-002,Trinitrotoluene Beta,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (96%); Wax (4%),Yellow-brown solid,1.654,6920,High,1.004,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Phlegmatized TNT
+TNT-003,Trinitrotoluene Gamma,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (94%); Paraffin (6%),Pale yellow waxy solid,1.656,6930,High,1.006,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Low-sensitivity TNT
+TNT-004,Trinitrotoluene Delta,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (97%); Graphite (3%),Grey-yellow solid,1.658,6940,High,1.008,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Conductive TNT
+TNT-005,Trinitrotoluene Epsilon,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (95%); Polymer (5%),Yellow granular solid,1.66,6950,High,1.01,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Polymer-coated TNT
+TNT-006,Trinitrotoluene Zeta,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (99%); Stabilizer (1%),Pale yellow solid,1.662,6960,High,1.012,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,High-purity TNT
+TNT-007,Trinitrotoluene Eta,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (93%); Sulfur (7%),Yellow-brown solid,1.664,6970,High,1.014,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Sulfur-modified TNT
+TNT-008,Trinitrotoluene Theta,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (92%); DNT (8%),Yellow solid,1.666,6980,High,1.016,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,TNT/DNT mixture
+TNT-009,Trinitrotoluene Iota,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (91%); Wax (9%),Yellow waxy solid,1.668,6990,High,1.018,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Phlegmatized variant
+TNT-010,Trinitrotoluene Kappa,Nitroaromatic Secondary Explosive,C₇H₅N₃O₆ (90%); Paraffin (10%),Light brown waxy solid,1.67,7000,High,1.02,Produces nitric oxides (NOₓ) and unburnt carbon. Fumes are Black and Orange/Brown,Commercial variant
+RDX,Cyclonite; Hexogen; T4,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (100%),White crystalline solid,1.82,8750,Very High,1.5,Produces acrid fumes of nitrogen oxides. Fumes are likely Orange/Brown (NOₓ),Main component in plastic explosives
+RDX-001,Cyclonite Alpha,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (97%); Wax (3%),Off-white solid,1.822,8760,Very High,1.502,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Desensitized RDX
+RDX-002,Cyclonite Beta,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (95%); Graphite (5%),Grey solid,1.824,8770,Very High,1.504,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Friction-reduced RDX
+RDX-003,Cyclonite Gamma,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (93%); Polymer (7%),White granular solid,1.826,8780,Very High,1.506,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Polymer-coated RDX
+RDX-004,Cyclonite Delta,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (96%); Stabilizer (4%),Off-white solid,1.828,8790,Very High,1.508,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Stabilized RDX
+RDX-005,Cyclonite Epsilon,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (94%); Paraffin (6%),White waxy solid,1.83,8800,Very High,1.51,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Waxy RDX
+RDX-006,Cyclonite Zeta,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (98%); Stabilizer (2%),White solid,1.832,8810,Very High,1.512,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,High-purity RDX
+RDX-007,Cyclonite Eta,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (92%); Wax (8%),Off-white solid,1.834,8820,Very High,1.514,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Maximum desensitization
+RDX-008,Cyclonite Theta,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (91%); HMX (9%),White solid,1.836,8830,Very High,1.516,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,RDX/HMX composite
+RDX-009,Cyclonite Iota,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (90%); TNT (10%),Yellow-white solid,1.838,8840,Very High,1.518,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Cast-compatible RDX
+RDX-010,Cyclonite Kappa,Nitramine Secondary Explosive,(CH₂N₂O₂)₃ (99%); Stabilizer (1%),White solid,1.84,8850,Very High,1.52,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Ultra-pure RDX
+HMX,Octogen,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (100%),White crystalline solid,1.91,9100,Extremely High,1.7,Breakdown products include nitrite and nitrate. Fumes are Orange/Brown (NOₓ),Military munitions explosive
+HMX-001,Octogen Alpha,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (98%); Stabilizer (2%),White solid,1.912,9110,Extremely High,1.702,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Stabilized HMX
+HMX-002,Octogen Beta,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (96%); Wax (4%),Off-white solid,1.914,9120,Extremely High,1.704,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Desensitized HMX
+HMX-003,Octogen Gamma,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (94%); Polymer (6%),Light grey solid,1.916,9130,Extremely High,1.706,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Polymer-bonded HMX
+HMX-004,Octogen Delta,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (97%); Graphite (3%),Grey-white solid,1.918,9140,Extremely High,1.708,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Conductive HMX
+HMX-005,Octogen Epsilon,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (95%); Paraffin (5%),White waxy solid,1.92,9150,Extremely High,1.71,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Phlegmatized HMX
+HMX-006,Octogen Zeta,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (99%); Stabilizer (1%),White solid,1.922,9160,Extremely High,1.712,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,High-purity HMX
+HMX-007,Octogen Eta,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (93%); Wax (7%),Off-white solid,1.924,9170,Extremely High,1.714,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Maximum desensitization
+HMX-008,Octogen Theta,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (92%); RDX (8%),White solid,1.926,9180,Extremely High,1.716,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,HMX/RDX composite
+HMX-009,Octogen Iota,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (91%); TNT (9%),Yellow-white solid,1.928,9190,Extremely High,1.718,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Cast-compatible HMX
+HMX-010,Octogen Kappa,Nitramine Secondary Explosive,(CH₂N₂O₂)₄ (90%); TATB (10%),Yellow-white solid,1.93,9200,Extremely High,1.72,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Insensitive HMX
+PETN,Pentaerythritol Tetranitrate; Pentrite,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (100%),White crystalline solid,1.77,8400,Very High,1.66,Decomposes to emit nitric oxide (NO). Fumes are Orange/Brown (NOₓ),Used in detonators
+PETN-001,Pentrite Alpha,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (97%); Wax (3%),Off-white solid,1.772,8410,Very High,1.662,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Desensitized PETN
+PETN-002,Pentrite Beta,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (95%); Polymer (5%),White granular solid,1.774,8420,Very High,1.664,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Polymer-coated PETN
+PETN-003,Pentrite Gamma,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (93%); Graphite (7%),Grey solid,1.776,8430,Very High,1.666,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Conductive PETN
+PETN-004,Pentrite Delta,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (96%); Stabilizer (4%),Off-white solid,1.778,8440,Very High,1.668,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Stabilized PETN
+PETN-005,Pentrite Epsilon,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (94%); Paraffin (6%),White waxy solid,1.78,8450,Very High,1.67,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Phlegmatized PETN
+PETN-006,Pentrite Zeta,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (98%); Stabilizer (2%),White solid,1.782,8460,Very High,1.672,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,High-purity PETN
+PETN-007,Pentrite Eta,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (92%); Wax (8%),Off-white solid,1.784,8470,Very High,1.674,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Maximum desensitization
+PETN-008,Pentrite Theta,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (91%); RDX (9%),White solid,1.786,8480,Very High,1.676,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,PETN/RDX composite
+PETN-009,Pentrite Iota,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (90%); TNT (10%),Yellow-white solid,1.788,8490,Very High,1.678,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Cast-compatible PETN
+PETN-010,Pentrite Kappa,Nitrate Ester Secondary Explosive,C₅H₈N₄O₁₂ (99%); Stabilizer (1%),White solid,1.79,8500,Very High,1.68,Produces nitrogen oxides (NOₓ). Fumes are Orange/Brown,Ultra-pure PETN
+Composition B,Comp B; Hexotol,Melt-Cast Mixture,RDX (59.5%); TNT (39.5%); Wax (1%),Yellow cast solid,1.685,7945,Very High,1.33,RDX and TNT products. Fumes are Black and Orange/Brown,Military explosive
+CompB-001,Composition B Alpha,Melt-Cast Mixture,RDX (60%); TNT (39%); Wax (1%),Yellow cast solid,1.687,7955,Very High,1.332,RDX and TNT products. Fumes are Black and Orange/Brown,Enhanced RDX content
+CompB-002,Composition B Beta,Melt-Cast Mixture,RDX (58%); TNT (41%); Wax (1%),Yellow cast solid,1.689,7965,Very High,1.334,RDX and TNT products. Fumes are Black and Orange/Brown,Higher TNT content
+CompB-003,Composition B Gamma,Melt-Cast Mixture,RDX (61%); TNT (38%); Wax (1%),Yellow cast solid,1.691,7975,Very High,1.336,RDX and TNT products. Fumes are Black and Orange/Brown,Maximum performance
+CompB-004,Composition B Delta,Melt-Cast Mixture,RDX (57%); TNT (42%); Wax (1%),Yellow cast solid,1.693,7985,Very High,1.338,RDX and TNT products. Fumes are Black and Orange/Brown,TNT-rich casting
+CompB-005,Composition B Epsilon,Melt-Cast Mixture,RDX (59.5%); TNT (39%); Wax (1.5%),Yellow cast solid,1.695,7995,Very High,1.34,RDX and TNT products. Fumes are Black and Orange/Brown,Improved flow
+CompB-006,Composition B Zeta,Melt-Cast Mixture,RDX (62%); TNT (37%); Wax (1%),Yellow cast solid,1.697,8005,Very High,1.342,RDX and TNT products. Fumes are Black and Orange/Brown,High-energy variant
+CompB-007,Composition B Eta,Melt-Cast Mixture,RDX (56%); TNT (43%); Wax (1%),Yellow cast solid,1.699,8015,Very High,1.344,RDX and TNT products. Fumes are Black and Orange/Brown,Low-sensitivity
+CompB-008,Composition B Theta,Melt-Cast Mixture,RDX (59%); TNT (39.5%); Wax (1.5%),Yellow cast solid,1.701,8025,Very High,1.346,RDX and TNT products. Fumes are Black and Orange/Brown,Balanced formulation
+CompB-009,Composition B Iota,Melt-Cast Mixture,RDX (63%); TNT (36%); Wax (1%),Yellow cast solid,1.703,8035,Very High,1.348,RDX and TNT products. Fumes are Black and Orange/Brown,Maximum RDX
+CompB-010,Composition B Kappa,Melt-Cast Mixture,RDX (55%); TNT (44%); Wax (1%),Yellow cast solid,1.705,8045,Very High,1.35,RDX and TNT products. Fumes are Black and Orange/Brown,Economy variant
+Composition C-4,C-4,Plastic Explosive (PBX),RDX (91%); Plasticizers/Binders (9%),Dirty white to light brown putty solid,1.66,8066,Very High,1.545,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Commonly used in IEDs
+C4-001,C-4 Alpha,Plastic Explosive (PBX),RDX (92%); Plasticizers/Binders (8%),White putty solid,1.662,8076,Very High,1.547,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Enhanced RDX content
+C4-002,C-4 Beta,Plastic Explosive (PBX),RDX (90%); Plasticizers/Binders (10%),Light brown putty solid,1.664,8086,Very High,1.549,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Improved plasticity
+C4-003,C-4 Gamma,Plastic Explosive (PBX),RDX (93%); Plasticizers/Binders (7%),White putty solid,1.666,8096,Very High,1.551,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Maximum energy
+C4-004,C-4 Delta,Plastic Explosive (PBX),RDX (89%); Plasticizers/Binders (11%),Light brown putty solid,1.668,8106,Very High,1.553,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Maximum flexibility
+C4-005,C-4 Epsilon,Plastic Explosive (PBX),RDX (91.5%); Plasticizers/Binders (8.5%),Cream putty solid,1.67,8116,Very High,1.555,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Balanced performance
+C4-006,C-4 Zeta,Plastic Explosive (PBX),RDX (94%); Plasticizers/Binders (6%),White putty solid,1.672,8126,Very High,1.557,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Ultra-high energy
+C4-007,C-4 Eta,Plastic Explosive (PBX),RDX (88%); Plasticizers/Binders (12%),Tan putty solid,1.674,8136,Very High,1.559,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Ultra-flexible
+C4-008,C-4 Theta,Plastic Explosive (PBX),RDX (91%); Plasticizers/Binders (8%); Taggant (1%),White putty solid,1.676,8146,Very High,1.561,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Tagged variant
+C4-009,C-4 Iota,Plastic Explosive (PBX),RDX (95%); Plasticizers/Binders (5%),White putty solid,1.678,8156,Very High,1.563,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Maximum RDX content
+C4-010,C-4 Kappa,Plastic Explosive (PBX),RDX (87%); Plasticizers/Binders (13%),Brown putty solid,1.68,8166,Very High,1.565,Nitrogen; water; carbon oxides. Fumes Black and Orange/Brown,Commercial grade
+Semtex,Semtex H,Plastic Explosive (PBX),PETN (40%); RDX (40%); Binder (20%),Red or orange-brown plastic solid,1.495,7545,Very High,1.35,PETN and RDX products. Fumes Orange/Brown,Commonly used in IEDs
+Semtex-001,Semtex Alpha,Plastic Explosive (PBX),PETN (41%); RDX (41%); Binder (18%),Orange plastic solid,1.497,7555,Very High,1.352,PETN and RDX products. Fumes Orange/Brown,Balanced performance
+Semtex-002,Semtex Beta,Plastic Explosive (PBX),PETN (39%); RDX (39%); Binder (22%),Red-brown plastic solid,1.499,7565,Very High,1.354,PETN and RDX products. Fumes Orange/Brown,Improved plasticity
+Semtex-003,Semtex Gamma,Plastic Explosive (PBX),PETN (42%); RDX (42%); Binder (16%),Light orange plastic solid,1.501,7575,Very High,1.356,PETN and RDX products. Fumes Orange/Brown,High-performance
+Semtex-004,Semtex Delta,Plastic Explosive (PBX),PETN (38%); RDX (38%); Binder (24%),Red plastic solid,1.503,7585,Very High,1.358,PETN and RDX products. Fumes Orange/Brown,Maximum flexibility
+Semtex-005,Semtex Epsilon,Plastic Explosive (PBX),PETN (40.5%); RDX (40.5%); Binder (19%),Orange-brown plastic solid,1.505,7595,Very High,1.36,PETN and RDX products. Fumes Orange/Brown,Standard balanced
+Semtex-006,Semtex Zeta,Plastic Explosive (PBX),PETN (43%); RDX (43%); Binder (14%),Light orange plastic solid,1.507,7605,Very High,1.362,PETN and RDX products. Fumes Orange/Brown,Maximum energy
+Semtex-007,Semtex Eta,Plastic Explosive (PBX),PETN (37%); RDX (37%); Binder (26%),Dark red plastic solid,1.509,7615,Very High,1.364,PETN and RDX products. Fumes Orange/Brown,Ultra-flexible
+Semtex-008,Semtex Theta,Plastic Explosive (PBX),PETN (40%); RDX (40%); Binder (19%); Taggant (1%),Orange plastic solid,1.511,7625,Very High,1.366,PETN and RDX products. Fumes Orange/Brown,Tagged identification
+Semtex-009,Semtex Iota,Plastic Explosive (PBX),PETN (44%); RDX (44%); Binder (12%),Yellow-orange plastic solid,1.513,7635,Very High,1.368,PETN and RDX products. Fumes Orange/Brown,Ultra-high energy
+Semtex-010,Semtex Kappa,Plastic Explosive (PBX),PETN (36%); RDX (36%); Binder (28%),Dark brown plastic solid,1.515,7645,Very High,1.37,PETN and RDX products. Fumes Orange/Brown,Commercial economy
+Nitroglycerin,NG; Glyceryl Trinitrate,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (100%),Pale yellow oily liquid,1.6,7500,Very High,1.7,Forms stable products (N₂; CO). Fumes Orange/Brown under non-ideal conditions,Component of high-energy IEDs
+NG-001,Nitroglycerin Alpha,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (98%); Stabilizer (2%),Pale yellow oily liquid,1.602,7510,Very High,1.702,Nitrogen oxides. Fumes Orange/Brown,Stabilized NG
+NG-002,Nitroglycerin Beta,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (96%); EGDN (4%),Yellow oily liquid,1.604,7520,Very High,1.704,Nitrogen oxides. Fumes Orange/Brown,NG/EGDN mixture
+NG-003,Nitroglycerin Gamma,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (99%); Stabilizer (1%),Pale yellow oily liquid,1.606,7530,Very High,1.706,Nitrogen oxides. Fumes Orange/Brown,High-purity NG
+NG-004,Nitroglycerin Delta,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (95%); Desensitizer (5%),Yellow oily liquid,1.608,7540,Very High,1.708,Nitrogen oxides. Fumes Orange/Brown,Desensitized NG
+NG-005,Nitroglycerin Epsilon,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (97%); Stabilizer (3%),Pale yellow oily liquid,1.61,7550,Very High,1.71,Nitrogen oxides. Fumes Orange/Brown,Enhanced stability
+NG-006,Nitroglycerin Zeta,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (94%); EGDN (6%),Yellow oily liquid,1.612,7560,Very High,1.712,Nitrogen oxides. Fumes Orange/Brown,Cold-resistant blend
+NG-007,Nitroglycerin Eta,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (99.5%); Trace Stabilizer (0.5%),Colorless oily liquid,1.614,7570,Very High,1.714,Nitrogen oxides. Fumes Orange/Brown,Ultra-pure NG
+NG-008,Nitroglycerin Theta,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (93%); Desensitizer (7%),Yellow oily liquid,1.616,7580,Very High,1.716,Nitrogen oxides. Fumes Orange/Brown,Maximum desensitization
+NG-009,Nitroglycerin Iota,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (92%); EGDN (8%),Yellow oily liquid,1.618,7590,Very High,1.718,Nitrogen oxides. Fumes Orange/Brown,Low-freezing blend
+NG-010,Nitroglycerin Kappa,Nitrate Ester Secondary Explosive,C₃H₅(NO₃)₃ (98.5%); Stabilizer (1.5%),Pale yellow oily liquid,1.62,7600,Very High,1.72,Nitrogen oxides. Fumes Orange/Brown,Stabilized high-purity
+Dynamite,Gelignite; Gelatin Dynamite,Nitroglycerin-Based Mixture,NG/Nitrocellulose with stabilizers,Paste or putty-like solid in paper cartridges,1.5,4550,High to Very High,1.025,Nitrogen oxides. Fumes Orange/Brown,Used in IEDs
+Dynamite-001,Dynamite Alpha,Nitroglycerin-Based Mixture,NG (28%); AN (52%); Wood Meal (20%),Brown stick cartridge,1.502,4560,High,1.027,Nitrogen oxides. Fumes Orange/Brown,Enhanced strength
+Dynamite-002,Dynamite Beta,Nitroglycerin-Based Mixture,NG (26%); AN (54%); Wood Meal (20%),Brown stick cartridge,1.504,4570,High,1.029,Nitrogen oxides. Fumes Orange/Brown,Standard commercial
+Dynamite-003,Dynamite Gamma,Nitroglycerin-Based Mixture,NG (24%); AN (56%); Wood Meal (20%),Brown stick cartridge,1.506,4580,High,1.031,Nitrogen oxides. Fumes Orange/Brown,Economy grade
+Dynamite-004,Dynamite Delta,Nitroglycerin-Based Mixture,NG (30%); AN (50%); Wood Meal (20%),Brown stick cartridge,1.508,4590,High,1.033,Nitrogen oxides. Fumes Orange/Brown,High-strength
+Dynamite-005,Dynamite Epsilon,Nitroglycerin-Based Mixture,NG (22%); AN (58%); Wood Meal (20%),Brown stick cartridge,1.51,4600,High,1.035,Nitrogen oxides. Fumes Orange/Brown,Low-cost
+Dynamite-006,Dynamite Zeta,Nitroglycerin-Based Mixture,NG (27%); AN (53%); Wood Meal (20%),Brown stick cartridge,1.512,4610,High,1.037,Nitrogen oxides. Fumes Orange/Brown,Mid-grade
+Dynamite-007,Dynamite Eta,Nitroglycerin-Based Mixture,NG (25%); AN (55%); Wood Meal (20%),Brown stick cartridge,1.514,4620,High,1.039,Nitrogen oxides. Fumes Orange/Brown,Standard balanced
+Dynamite-008,Dynamite Theta,Nitroglycerin-Based Mixture,NG (32%); AN (48%); Wood Meal (20%),Brown stick cartridge,1.516,4630,High,1.041,Nitrogen oxides. Fumes Orange/Brown,Premium high-strength
+Dynamite-009,Dynamite Iota,Nitroglycerin-Based Mixture,NG (20%); AN (60%); Wood Meal (20%),Brown stick cartridge,1.518,4640,Medium to High,1.043,Nitrogen oxides. Fumes Orange/Brown,Budget commercial
+Dynamite-010,Dynamite Kappa,Nitroglycerin-Based Mixture,NG (29%); AN (51%); Wood Meal (20%),Brown stick cartridge,1.52,4650,High,1.045,Nitrogen oxides. Fumes Orange/Brown,High-performance commercial
+ANFO,Ammonium Nitrate/Fuel Oil,Blasting Agent,Ammonium Nitrate (94%); Fuel Oil (6%),Free-flowing white/off-white prills soaked in oil,0.875,3450,Low to Medium,0.74,Nitrogen oxides. Fumes Orange/Brown,Very common in large-scale IEDs
+ANFO-001,ANFO Alpha,Blasting Agent,Ammonium Nitrate (93%); Fuel Oil (7%),White prills in oil,0.877,3460,Low to Medium,0.742,Nitrogen oxides. Fumes Orange/Brown,Enhanced fuel oil
+ANFO-002,ANFO Beta,Blasting Agent,Ammonium Nitrate (92%); Fuel Oil (8%),White prills in oil,0.879,3470,Low to Medium,0.744,Nitrogen oxides. Fumes Orange/Brown,Maximum fuel oil
+ANFO-003,ANFO Gamma,Blasting Agent,Ammonium Nitrate (95%); Fuel Oil (5%),White prills in oil,0.881,3480,Low to Medium,0.746,Nitrogen oxides. Fumes Orange/Brown,Minimum fuel oil
+ANFO-004,ANFO Delta,Blasting Agent,Ammonium Nitrate (91%); Fuel Oil (9%),White prills in oil,0.883,3490,Low to Medium,0.748,Nitrogen oxides. Fumes Orange/Brown,High fuel oil
+ANFO-005,ANFO Epsilon,Blasting Agent,Ammonium Nitrate (96%); Fuel Oil (4%),White prills in oil,0.885,3500,Low to Medium,0.75,Nitrogen oxides. Fumes Orange/Brown,Low fuel oil
+ANFO-006,ANFO Zeta,Blasting Agent,Ammonium Nitrate (93.5%); Fuel Oil (6.5%),White prills in oil,0.887,3510,Low to Medium,0.752,Nitrogen oxides. Fumes Orange/Brown,Optimized standard
+ANFO-007,ANFO Eta,Blasting Agent,Ammonium Nitrate (90%); Fuel Oil (10%),White prills in oil,0.889,3520,Low to Medium,0.754,Nitrogen oxides. Fumes Orange/Brown,Maximum energy
+ANFO-008,ANFO Theta,Blasting Agent,Ammonium Nitrate (97%); Fuel Oil (3%),White prills in oil,0.891,3530,Low,0.756,Nitrogen oxides. Fumes Orange/Brown,Economy low-fuel
+ANFO-009,ANFO Iota,Blasting Agent,Ammonium Nitrate (94%); Fuel Oil (5%); Aluminum (1%),Grey-white prills,0.893,3540,Low to Medium,0.758,Mixed oxides. Fumes White and Orange/Brown,Metallized ANFO
+ANFO-010,ANFO Kappa,Blasting Agent,Ammonium Nitrate (92%); Fuel Oil (6%); Aluminum (2%),Grey-white prills,0.895,3550,Medium,0.76,Mixed oxides. Fumes White and Orange/Brown,Enhanced metallized
+Water Gels/Slurries,Slurry Explosives,Water-Based Blasting Agent/Explosive,AN/SN/CN solution; fuels; sensitizers; water; gelling agents,Gel-like or slurry consistency; various colors,1.2,4250,Medium to High,0.9,Water vapor and NOₓ. Fumes White or Orange/Brown,Water Resistance: Good to Excellent
+WaterGel-001,Water Gel Alpha,Water-Based Blasting Agent,AN/SN/CN (70%); fuels (20%); sensitizers (10%),Orange gel,1.202,4260,Medium to High,0.902,Water vapor and NOₓ. Fumes White or Orange/Brown,High-energy formulation
+WaterGel-002,Water Gel Beta,Water-Based Blasting Agent,AN/SN/CN (72%); fuels (18%); sensitizers (10%),Yellow gel,1.204,4270,Medium to High,0.904,Water vapor and NOₓ. Fumes White or Orange/Brown,Standard formulation
+WaterGel-003,Water Gel Gamma,Water-Based Blasting Agent,AN/SN/CN (68%); fuels (22%); sensitizers (10%),Red-orange gel,1.206,4280,Medium to High,0.906,Water vapor and NOₓ. Fumes White or Orange/Brown,Maximum energy
+WaterGel-004,Water Gel Delta,Water-Based Blasting Agent,AN/SN/CN (74%); fuels (16%); sensitizers (10%),Light yellow gel,1.208,4290,Medium,0.908,Water vapor and NOₓ. Fumes White or Orange/Brown,Economy variant
+WaterGel-005,Water Gel Epsilon,Water-Based Blasting Agent,AN/SN/CN (66%); fuels (24%); sensitizers (10%),Dark orange gel,1.21,4300,Medium to High,0.91,Water vapor and NOₓ. Fumes White or Orange/Brown,Ultra-high energy
+WaterGel-006,Water Gel Zeta,Water-Based Blasting Agent,AN/SN/CN (71%); fuels (19%); sensitizers (10%),Orange-yellow gel,1.212,4310,Medium to High,0.912,Water vapor and NOₓ. Fumes White or Orange/Brown,Balanced standard
+WaterGel-007,Water Gel Eta,Water-Based Blasting Agent,AN/SN/CN (76%); fuels (14%); sensitizers (10%),Pale yellow gel,1.214,4320,Medium,0.914,Water vapor and NOₓ. Fumes White or Orange/Brown,Low-cost economy
+WaterGel-008,Water Gel Theta,Water-Based Blasting Agent,AN/SN/CN (69%); fuels (21%); sensitizers (10%),Red gel,1.216,4330,Medium to High,0.916,Water vapor and NOₓ. Fumes White or Orange/Brown,High-performance
+WaterGel-009,Water Gel Iota,Water-Based Blasting Agent,AN/SN/CN (64%); fuels (26%); sensitizers (10%),Dark red gel,1.218,4340,High,0.918,Water vapor and NOₓ. Fumes White or Orange/Brown,Maximum fuel content
+WaterGel-010,Water Gel Kappa,Water-Based Blasting Agent,AN/SN/CN (78%); fuels (12%); sensitizers (10%),Light yellow gel,1.22,4350,Medium,0.92,Water vapor and NOₓ. Fumes White or Orange/Brown,Minimum fuel content
+Emulsions,Emulsion Explosives,Water-Based Blasting Agent/Explosive,AN/SN/CN solution emulsified in oil phase; sensitizers,Thick mayonnaise-like consistency; typically off-white,1.225,5100,Medium to High,0.95,Water vapor and NOₓ. Fumes White or Orange/Brown,Water Resistance: Excellent
+Emulsion-001,Emulsion Alpha,Water-Based Blasting Agent,AN solution (68%); oil phase (22%); sensitizers (10%),Off-white emulsion,1.227,5110,Medium to High,0.952,Water vapor and NOₓ. Fumes White or Orange/Brown,High-energy formulation
+Emulsion-002,Emulsion Beta,Water-Based Blasting Agent,AN solution (70%); oil phase (20%); sensitizers (10%),White emulsion,1.229,5120,Medium to High,0.954,Water vapor and NOₓ. Fumes White or Orange/Brown,Standard formulation
+Emulsion-003,Emulsion Gamma,Water-Based Blasting Agent,AN solution (66%); oil phase (24%); sensitizers (10%),Cream emulsion,1.231,5130,Medium to High,0.956,Water vapor and NOₓ. Fumes White or Orange/Brown,Maximum sensitivity
+Emulsion-004,Emulsion Delta,Water-Based Blasting Agent,AN solution (72%); oil phase (18%); sensitizers (10%),White emulsion,1.233,5140,Medium to High,0.958,Water vapor and NOₓ. Fumes White or Orange/Brown,Economy variant
+Emulsion-005,Emulsion Epsilon,Water-Based Blasting Agent,AN solution (64%); oil phase (26%); sensitizers (10%),Light cream emulsion,1.235,5150,High,0.96,Water vapor and NOₓ. Fumes White or Orange/Brown,Ultra-high energy
+Emulsion-006,Emulsion Zeta,Water-Based Blasting Agent,AN solution (69%); oil phase (21%); sensitizers (10%),Off-white emulsion,1.237,5160,Medium to High,0.962,Water vapor and NOₓ. Fumes White or Orange/Brown,Balanced standard
+Emulsion-007,Emulsion Eta,Water-Based Blasting Agent,AN solution (74%); oil phase (16%); sensitizers (10%),White emulsion,1.239,5170,Medium,0.964,Water vapor and NOₓ. Fumes White or Orange/Brown,Low-cost economy
+Emulsion-008,Emulsion Theta,Water-Based Blasting Agent,AN solution (67%); oil phase (23%); sensitizers (10%),Cream emulsion,1.241,5180,Medium to High,0.966,Water vapor and NOₓ. Fumes White or Orange/Brown,High-performance
+Emulsion-009,Emulsion Iota,Water-Based Blasting Agent,AN solution (62%); oil phase (28%); sensitizers (10%),Light yellow emulsion,1.243,5190,High,0.968,Water vapor and NOₓ. Fumes White or Orange/Brown,Maximum oil phase
+Emulsion-010,Emulsion Kappa,Water-Based Blasting Agent,AN solution (76%); oil phase (14%); sensitizers (10%),White emulsion,1.245,5200,Medium,0.97,Water vapor and NOₓ. Fumes White or Orange/Brown,Minimum oil phase
+Lead Azide,,Primary Explosive,Pb(N₃)₂ (100%),White crystalline powder,4.71,5300,N/A,N/A,Lead metal and nitrogen gas. Fumes minimal and colorless,Sensitivity: Extreme. Used in improvised detonators
+LeadAzide-001,Lead Azide Alpha,Primary Explosive,Pb(N₃)₂ (98%); Dextrin (2%),White powder,4.712,5310,N/A,N/A,Lead and nitrogen. Fumes minimal,Standard dextrinated
+LeadAzide-002,Lead Azide Beta,Primary Explosive,Pb(N₃)₂ (96%); Dextrin (4%),Off-white powder,4.714,5320,N/A,N/A,Lead and nitrogen. Fumes minimal,Enhanced desensitization
+LeadAzide-003,Lead Azide Gamma,Primary Explosive,Pb(N₃)₂ (99%); Stabilizer (1%),White powder,4.716,5330,N/A,N/A,Lead and nitrogen. Fumes minimal,High-purity variant
+LeadAzide-004,Lead Azide Delta,Primary Explosive,Pb(N₃)₂ (95%); Dextrin (5%),Off-white powder,4.718,5340,N/A,N/A,Lead and nitrogen. Fumes minimal,Maximum desensitization
+LeadAzide-005,Lead Azide Epsilon,Primary Explosive,Pb(N₃)₂ (97%); Dextrin (3%),White powder,4.72,5350,N/A,N/A,Lead and nitrogen. Fumes minimal,Balanced formulation
+LeadAzide-006,Lead Azide Zeta,Primary Explosive,Pb(N₃)₂ (99.5%); Trace Stabilizer (0.5%),White powder,4.722,5360,N/A,N/A,Lead and nitrogen. Fumes minimal,Ultra-pure variant
+LeadAzide-007,Lead Azide Eta,Primary Explosive,Pb(N₃)₂ (94%); Dextrin (6%),Off-white powder,4.724,5370,N/A,N/A,Lead and nitrogen. Fumes minimal,Ultra-desensitized
+LeadAzide-008,Lead Azide Theta,Primary Explosive,Pb(N₃)₂ (98.5%); Stabilizer (1.5%),White powder,4.726,5380,N/A,N/A,Lead and nitrogen. Fumes minimal,Stabilized variant
+LeadAzide-009,Lead Azide Iota,Primary Explosive,Pb(N₃)₂ (93%); Dextrin (7%),Cream powder,4.728,5390,N/A,N/A,Lead and nitrogen. Fumes minimal,Maximum safety
+LeadAzide-010,Lead Azide Kappa,Primary Explosive,Pb(N₃)₂ (97.5%); Dextrin (2.5%),White powder,4.73,5400,N/A,N/A,Lead and nitrogen. Fumes minimal,Optimized balance
+Mercury Fulminate,,Primary Explosive,Hg(CNO)₂ (100%),Grey crystalline powder,4.42,4250,N/A,N/A,Mercury vapor; carbon monoxide; nitrogen gas. Toxic fumes,Sensitivity: Extreme. Used in improvised detonators
+MercuryFulminate-001,Mercury Fulminate Alpha,Primary Explosive,Hg(CNO)₂ (98%); Stabilizer (2%),Grey powder,4.422,4260,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Stabilized variant
+MercuryFulminate-002,Mercury Fulminate Beta,Primary Explosive,Hg(CNO)₂ (96%); Inert (4%),Grey-brown powder,4.424,4270,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Desensitized variant
+MercuryFulminate-003,Mercury Fulminate Gamma,Primary Explosive,Hg(CNO)₂ (99%); Trace Stabilizer (1%),Light grey powder,4.426,4280,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,High-purity variant
+MercuryFulminate-004,Mercury Fulminate Delta,Primary Explosive,Hg(CNO)₂ (95%); Inert (5%),Brown-grey powder,4.428,4290,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Maximum desensitization
+MercuryFulminate-005,Mercury Fulminate Epsilon,Primary Explosive,Hg(CNO)₂ (97%); Stabilizer (3%),Grey powder,4.43,4300,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Enhanced stability
+MercuryFulminate-006,Mercury Fulminate Zeta,Primary Explosive,Hg(CNO)₂ (99.5%); Trace Stabilizer (0.5%),Light grey powder,4.432,4310,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Ultra-pure variant
+MercuryFulminate-007,Mercury Fulminate Eta,Primary Explosive,Hg(CNO)₂ (94%); Inert (6%),Brown powder,4.434,4320,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Ultra-desensitized
+MercuryFulminate-008,Mercury Fulminate Theta,Primary Explosive,Hg(CNO)₂ (98.5%); Stabilizer (1.5%),Grey powder,4.436,4330,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Stabilized high-purity
+MercuryFulminate-009,Mercury Fulminate Iota,Primary Explosive,Hg(CNO)₂ (93%); Inert (7%),Dark brown powder,4.438,4340,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Maximum safety
+MercuryFulminate-010,Mercury Fulminate Kappa,Primary Explosive,Hg(CNO)₂ (97.5%); Stabilizer (2.5%),Grey powder,4.44,4350,N/A,N/A,Mercury vapor; CO; N₂. Toxic fumes,Optimized balance
+Black Powder,Gunpowder,Low Explosive,KNO₃ (75%); Charcoal (15%); Sulfur (10%),Black granular powder,1.675,400,N/A,N/A,K₂S; CO₂; N₂. Produces dense White smoke from potassium sulfide,Sensitivity: High. Used in pipe bombs
+BlackPowder-001,Black Powder Alpha,Low Explosive,KNO₃ (76%); Charcoal (15%); Sulfur (9%),Black granular powder,1.677,405,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Enhanced potassium nitrate
+BlackPowder-002,Black Powder Beta,Low Explosive,KNO₃ (74%); Charcoal (16%); Sulfur (10%),Black granular powder,1.679,410,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Enhanced charcoal
+BlackPowder-003,Black Powder Gamma,Low Explosive,KNO₃ (77%); Charcoal (14%); Sulfur (9%),Black granular powder,1.681,415,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Fast-burning variant
+BlackPowder-004,Black Powder Delta,Low Explosive,KNO₃ (73%); Charcoal (17%); Sulfur (10%),Black granular powder,1.683,420,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,High charcoal content
+BlackPowder-005,Black Powder Epsilon,Low Explosive,KNO₃ (78%); Charcoal (13%); Sulfur (9%),Black granular powder,1.685,425,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Maximum oxidizer
+BlackPowder-006,Black Powder Zeta,Low Explosive,KNO₃ (75%); Charcoal (15%); Sulfur (10%),Black granular powder,1.687,430,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Standard balanced
+BlackPowder-007,Black Powder Eta,Low Explosive,KNO₃ (72%); Charcoal (18%); Sulfur (10%),Black granular powder,1.689,435,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Fuel-rich variant
+BlackPowder-008,Black Powder Theta,Low Explosive,KNO₃ (79%); Charcoal (12%); Sulfur (9%),Black granular powder,1.691,440,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Ultra-fast burning
+BlackPowder-009,Black Powder Iota,Low Explosive,KNO₃ (71%); Charcoal (19%); Sulfur (10%),Black granular powder,1.693,445,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Maximum fuel
+BlackPowder-010,Black Powder Kappa,Low Explosive,KNO₃ (80%); Charcoal (11%); Sulfur (9%),Black granular powder,1.695,450,N/A,N/A,K₂S; CO₂; N₂. Dense White smoke,Oxidizer-rich variant
+TATP,Triacetone Triperoxide; APEX; Mother of Satan,Primary Explosive; HME,C₉H₁₈O₆ (trimer). Made from acetone; hydrogen peroxide; acid,White crystalline solid,1.18,5300,N/A (Primary),0.8,Main products are acetone and ozone,Highly sensitive. Used in IEDs
+TATP-001,TATP Alpha,Primary Explosive; HME,C₉H₁₈O₆ (95%); Stabilizer (5%),Off-white crystalline solid,1.182,5310,N/A (Primary),0.802,Acetone and ozone,Slightly stabilized
+TATP-002,TATP Beta,Primary Explosive; HME,C₉H₁₈O₆ (92%); Inert Diluent (8%),White crystalline solid,1.184,5320,N/A (Primary),0.804,Acetone and ozone,Desensitized variant
+TATP-003,TATP Gamma,Primary Explosive; HME,C₉H₁₈O₆ (98%); Trace Acid (2%),White crystalline solid,1.186,5330,N/A (Primary),0.806,Acetone and ozone,High-purity variant
+TATP-004,TATP Delta,Primary Explosive; HME,C₉H₁₈O₆ (90%); Inert Diluent (10%),Off-white crystalline solid,1.188,5340,N/A (Primary),0.808,Acetone and ozone,Maximum desensitization
+TATP-005,TATP Epsilon,Primary Explosive; HME,C₉H₁₈O₆ (93%); Stabilizer (7%),White crystalline solid,1.19,5350,N/A (Primary),0.81,Acetone and ozone,Enhanced stability
+TATP-006,TATP Zeta,Primary Explosive; HME,C₉H₁₈O₆ (99%); Trace Stabilizer (1%),White crystalline solid,1.192,5360,N/A (Primary),0.812,Acetone and ozone,Ultra-pure variant
+TATP-007,TATP Eta,Primary Explosive; HME,C₉H₁₈O₆ (88%); Inert Diluent (12%),Cream crystalline solid,1.194,5370,N/A (Primary),0.814,Acetone and ozone,Ultra-desensitized
+TATP-008,TATP Theta,Primary Explosive; HME,C₉H₁₈O₆ (94%); Stabilizer (6%),White crystalline solid,1.196,5380,N/A (Primary),0.816,Acetone and ozone,Stabilized variant
+TATP-009,TATP Iota,Primary Explosive; HME,C₉H₁₈O₆ (87%); Inert Diluent (13%),Off-white crystalline solid,1.198,5390,N/A (Primary),0.818,Acetone and ozone,Maximum safety
+TATP-010,TATP Kappa,Primary Explosive; HME,C₉H₁₈O₆ (96%); Stabilizer (4%),White crystalline solid,1.2,5400,N/A (Primary),0.82,Acetone and ozone,Optimized balance
+HMTD,Hexamethylene Triperoxide Diamine,Primary Explosive; HME,C₆H₁₂N₂O₆. Made from hexamine; hydrogen peroxide; citric acid,White crystalline solid,1.57,3950,N/A (Primary),0.74,Decomposes to volatile amines and acids,Highly sensitive. Used in improvised detonators
+HMTD-001,HMTD Alpha,Primary Explosive; HME,C₆H₁₂N₂O₆ (96%); Stabilizer (4%),Off-white crystalline solid,1.572,3960,N/A (Primary),0.742,Volatile amines and acids,Stabilized variant
+HMTD-002,HMTD Beta,Primary Explosive; HME,C₆H₁₂N₂O₆ (94%); Inert Diluent (6%),White crystalline solid,1.574,3970,N/A (Primary),0.744,Volatile amines and acids,Desensitized variant
+HMTD-003,HMTD Gamma,Primary Explosive; HME,C₆H₁₂N₂O₆ (98%); Trace Acid (2%),White crystalline solid,1.576,3980,N/A (Primary),0.746,Volatile amines and acids,High-purity variant
+HMTD-004,HMTD Delta,Primary Explosive; HME,C₆H₁₂N₂O₆ (92%); Inert Diluent (8%),Off-white crystalline solid,1.578,3990,N/A (Primary),0.748,Volatile amines and acids,Maximum desensitization
+HMTD-005,HMTD Epsilon,Primary Explosive; HME,C₆H₁₂N₂O₆ (95%); Stabilizer (5%),White crystalline solid,1.58,4000,N/A (Primary),0.75,Volatile amines and acids,Enhanced stability
+HMTD-006,HMTD Zeta,Primary Explosive; HME,C₆H₁₂N₂O₆ (99%); Trace Stabilizer (1%),White crystalline solid,1.582,4010,N/A (Primary),0.752,Volatile amines and acids,Ultra-pure variant
+HMTD-007,HMTD Eta,Primary Explosive; HME,C₆H₁₂N₂O₆ (90%); Inert Diluent (10%),Cream crystalline solid,1.584,4020,N/A (Primary),0.754,Volatile amines and acids,Ultra-desensitized
+HMTD-008,HMTD Theta,Primary Explosive; HME,C₆H₁₂N₂O₆ (97%); Stabilizer (3%),White crystalline solid,1.586,4030,N/A (Primary),0.756,Volatile amines and acids,Stabilized variant
+HMTD-009,HMTD Iota,Primary Explosive; HME,C₆H₁₂N₂O₆ (88%); Inert Diluent (12%),Off-white crystalline solid,1.588,4040,N/A (Primary),0.758,Volatile amines and acids,Maximum safety
+HMTD-010,HMTD Kappa,Primary Explosive; HME,C₆H₁₂N₂O₆ (93%); Stabilizer (7%),White crystalline solid,1.59,4050,N/A (Primary),0.76,Volatile amines and acids,Optimized balance
+Urea Nitrate,Uronium nitrate; UN,High Explosive; HME,(NH₂)₂COHNO₃. Made from urea and nitric acid,White crystalline solid,1.67,4050,Similar to,,,

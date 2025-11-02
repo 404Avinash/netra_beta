@@ -1,0 +1,41 @@
+{
+  "model_type": "XGBoost",
+  "version": "1.0.0",
+  "training_date": "2025-11-02T06:20:31.159882",
+  "training_samples": 8000,
+  "test_samples": 2000,
+  "train_accuracy": 0.99125,
+  "test_accuracy": 0.831,
+  "cv_accuracy_mean": 0.8359,
+  "cv_accuracy_std": 0.01152996097131296,
+  "num_features": 15,
+  "threat_levels": [
+    "CRITICAL",
+    "HIGH",
+    "LOW",
+    "MODERATE"
+  ],
+  "feature_names": [
+    "Fume_Detection",
+    "Metal_Detection",
+    "GPR_Reading",
+    "Ground_CV",
+    "Drone_CV",
+    "Disturbance",
+    "Thermal",
+    "Fume_Metal_Product",
+    "CV_Average",
+    "Surface_Anomaly",
+    "High_Fume_Metal",
+    "High_CV_Detection",
+    "Multiple_Indicators",
+    "Danger_Level_Encoded",
+    "Explosive_Class_Encoded"
+  ],
+  "class_distribution": {
+    "CRITICAL": 423,
+    "HIGH": 1378,
+    "LOW": 4883,
+    "MODERATE": 3316
+  }
+}

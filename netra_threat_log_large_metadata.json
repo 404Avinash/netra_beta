@@ -1,0 +1,17 @@
+{
+  "generation_date": "2025-11-02T06:19:34.038348",
+  "num_records": 10000,
+  "num_days": 180,
+  "num_locations": 50,
+  "num_states": 7,
+  "num_explosive_types": 188,
+  "threat_distribution": {
+    "LOW": 4883,
+    "MODERATE": 3316,
+    "HIGH": 1378,
+    "CRITICAL": 423
+  },
+  "uses_ap_gp_patterns": true,
+  "overfitting_prevention": "High variance, non-linear interactions, noise",
+  "expected_ml_accuracy": "80-85%"
+}

@@ -1,0 +1,90 @@
+{
+  "sensor_features": [
+    "Fume_Detection",
+    "Metal_Detection",
+    "GPR_Reading",
+    "Ground_CV",
+    "Drone_CV",
+    "Disturbance",
+    "Thermal"
+  ],
+  "all_features": [
+    "Fume_Detection",
+    "Metal_Detection",
+    "GPR_Reading",
+    "Ground_CV",
+    "Drone_CV",
+    "Disturbance",
+    "Thermal",
+    "Fume_Metal_Product",
+    "CV_Average",
+    "Surface_Anomaly",
+    "High_Fume_Metal",
+    "High_CV_Detection",
+    "Multiple_Indicators",
+    "Danger_Level_Encoded",
+    "Explosive_Class_Encoded"
+  ],
+  "feature_importance": [
+    {
+      "Feature": "Multiple_Indicators",
+      "Importance": 0.49796268343925476
+    },
+    {
+      "Feature": "Fume_Detection",
+      "Importance": 0.11757346242666245
+    },
+    {
+      "Feature": "Fume_Metal_Product",
+      "Importance": 0.07456578314304352
+    },
+    {
+      "Feature": "CV_Average",
+      "Importance": 0.055089592933654785
+    },
+    {
+      "Feature": "GPR_Reading",
+      "Importance": 0.04920537769794464
+    },
+    {
+      "Feature": "High_Fume_Metal",
+      "Importance": 0.04680937901139259
+    },
+    {
+      "Feature": "Surface_Anomaly",
+      "Importance": 0.026739172637462616
+    },
+    {
+      "Feature": "Metal_Detection",
+      "Importance": 0.026381492614746094
+    },
+    {
+      "Feature": "High_CV_Detection",
+      "Importance": 0.024913493543863297
+    },
+    {
+      "Feature": "Ground_CV",
+      "Importance": 0.021401816979050636
+    },
+    {
+      "Feature": "Drone_CV",
+      "Importance": 0.020566344261169434
+    },
+    {
+      "Feature": "Disturbance",
+      "Importance": 0.020230568945407867
+    },
+    {
+      "Feature": "Thermal",
+      "Importance": 0.01856079511344433
+    },
+    {
+      "Feature": "Danger_Level_Encoded",
+      "Importance": 0.0
+    },
+    {
+      "Feature": "Explosive_Class_Encoded",
+      "Importance": 0.0
+    }
+  ]
+}
