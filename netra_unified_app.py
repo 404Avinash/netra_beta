@@ -625,7 +625,7 @@ def show_historical_data():
     # Display data
     st.dataframe(
         filtered_df[['Timestamp', 'Location', 'State', 'Threat_Probability', 
-                     'Threat_Level', 'Classification', 'Confidence']],
+                     'Threat_Level', 'Explosive_Type', 'Danger_Level']],
         use_container_width=True
     )
     
