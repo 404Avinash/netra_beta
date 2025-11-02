@@ -1,0 +1,26 @@
+# FastAPI Backend Requirements
+# Install with: pip install -r api/requirements.txt
+
+# Core FastAPI
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+
+# Request/Response validation
+pydantic>=2.0.0
+python-multipart>=0.0.6
+
+# ML Dependencies (same as main app)
+xgboost>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Monitoring & Logging
+python-json-logger>=2.0.7
+prometheus-client>=0.19.0  # Optional: for metrics
+
+# Development
+pytest>=7.4.0
+httpx>=0.25.0  # For testing FastAPI

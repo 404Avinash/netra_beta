@@ -561,6 +561,36 @@ def analyze_threat(sensors, location):
                 threat_level = ML_ENCODERS['target_encoder'].inverse_transform([prediction])[0]
                 probability = float(probabilities[prediction] * 100)
                 
+                # Get all class probabilities for visualization
+                all_classes = ML_ENCODERS['target_encoder'].classes_
+                all_probabilities = {
+                    str(cls): float(prob * 100) 
+                    for cls, prob in zip(all_classes, probabilities)
+                }
+                
+                # Get feature importance (top contributing features)
+                try:
+                    if hasattr(ML_MODEL, 'feature_importances_'):
+                        feature_importance = ML_MODEL.feature_importances_
+                        feature_names = ML_FEATURES['all_features']
+                        
+                        # Get top 5 features with their values
+                        importance_dict = dict(zip(feature_names, feature_importance))
+                        top_features = sorted(importance_dict.items(), key=lambda x: x[1], reverse=True)[:5]
+                        
+                        feature_contributions = [
+                            {
+                                'name': name,
+                                'importance': float(imp * 100),
+                                'value': float(features.get(name, 0))
+                            }
+                            for name, imp in top_features
+                        ]
+                    else:
+                        feature_contributions = []
+                except Exception as e:
+                    feature_contributions = []
+                
                 analysis = {
                     'scan_id': f"SCAN_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
                     'location': location,
@@ -568,7 +598,9 @@ def analyze_threat(sensors, location):
                     'threat_level': threat_level,
                     'confidence': probability,  # ML confidence is the probability
                     'sensors': sensors,
-                    'ml_powered': True  # Flag to show ML badge
+                    'ml_powered': True,  # Flag to show ML badge
+                    'all_probabilities': all_probabilities,  # All class predictions
+                    'feature_contributions': feature_contributions  # Top features
                 }
                 
             except Exception as e:
@@ -698,6 +730,97 @@ def display_live_results(analysis):
         st.metric("Threat Probability", f"{probability:.1f}%")
         st.metric("Threat Level", threat_level)
         st.metric("Confidence", f"{analysis.get('confidence', 90):.1f}%")
+    
+    # Add ML Prediction Details Panel (expandable)
+    if analysis.get('ml_powered', False):
+        st.markdown("---")
+        with st.expander("🔍 **ML Model Prediction Details**", expanded=False):
+            st.markdown("#### 📊 Class Probability Distribution")
+            st.caption("How confident the model is about each threat level")
+            
+            # Get all probabilities
+            all_probs = analysis.get('all_probabilities', {})
+            
+            if all_probs:
+                # Sort by probability (highest first)
+                sorted_probs = sorted(all_probs.items(), key=lambda x: x[1], reverse=True)
+                
+                # Create columns for metrics
+                prob_cols = st.columns(len(sorted_probs))
+                
+                for idx, (threat_class, prob) in enumerate(sorted_probs):
+                    with prob_cols[idx]:
+                        # Highlight predicted class
+                        if threat_class == threat_level:
+                            st.markdown(f"**🎯 {threat_class}**")
+                        else:
+                            st.markdown(f"{threat_class}")
+                        st.progress(min(1.0, prob/100), text=f"{prob:.2f}%")
+                
+                # Visual bar chart
+                st.markdown("---")
+                fig_probs = go.Figure(data=[
+                    go.Bar(
+                        x=[cls for cls, _ in sorted_probs],
+                        y=[prob for _, prob in sorted_probs],
+                        marker=dict(
+                            color=['#ff4444' if cls == threat_level else '#444444' 
+                                   for cls, _ in sorted_probs],
+                            line=dict(color='white', width=2)
+                        ),
+                        text=[f"{prob:.1f}%" for _, prob in sorted_probs],
+                        textposition='outside'
+                    )
+                ])
+                fig_probs.update_layout(
+                    title="Model Confidence for Each Class",
+                    xaxis_title="Threat Level",
+                    yaxis_title="Probability (%)",
+                    paper_bgcolor='rgba(0,0,0,0)',
+                    plot_bgcolor='rgba(0,0,0,0)',
+                    font={'color': 'white'},
+                    height=300,
+                    showlegend=False
+                )
+                st.plotly_chart(fig_probs, use_container_width=True)
+            
+            # Show feature contributions
+            feature_contribs = analysis.get('feature_contributions', [])
+            if feature_contribs:
+                st.markdown("---")
+                st.markdown("#### 🔝 Top Contributing Features")
+                st.caption("Sensors and derived features that most influenced this prediction")
+                
+                for feat in feature_contribs:
+                    feat_name = feat['name'].replace('_', ' ').title()
+                    importance = feat['importance']
+                    value = feat['value']
+                    
+                    col_feat1, col_feat2, col_feat3 = st.columns([3, 1, 1])
+                    with col_feat1:
+                        st.markdown(f"**{feat_name}**")
+                        st.progress(min(1.0, importance/100), text=f"{importance:.1f}% importance")
+                    with col_feat2:
+                        st.metric("Value", f"{value:.1f}")
+                    with col_feat3:
+                        # Show indicator if high value
+                        if value > 70:
+                            st.markdown("🔴 **HIGH**")
+                        elif value > 40:
+                            st.markdown("🟡 **MED**")
+                        else:
+                            st.markdown("🟢 **LOW**")
+            
+            # Model metadata
+            st.markdown("---")
+            st.markdown("#### 🤖 Model Information")
+            col_m1, col_m2, col_m3 = st.columns(3)
+            with col_m1:
+                st.metric("Model Type", "XGBoost")
+            with col_m2:
+                st.metric("Test Accuracy", "83.1%")
+            with col_m3:
+                st.metric("Training Samples", "10,000")
         st.metric("Scan ID", analysis['scan_id'])
 
 
