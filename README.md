@@ -1,4 +1,4 @@
-# 🛡️ N.E.T.R.A. System# 🛡️ N.E.T.R.A. System# 🛡️ N.E.T.R.A. System# N.E.T.R.A. System
+# 🛡️ N.E.T.R.A. System# 🛡️ N.E.T.R.A. System# 🛡️ N.E.T.R.A. System# N.E.T.R.A. System.
 
 ## Next-Gen Eye for Threat Recognition and Analysis
 
